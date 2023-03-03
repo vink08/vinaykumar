@@ -10,7 +10,7 @@ import Animate from 'react-smooth';
   import App from '../../App.js'
 import ReactGa from 'react-ga';
 import {Helmet} from 'react-helmet';
-import Projects from '../../components/project2';
+
 import PCD from '../../components/projects';
 
 
