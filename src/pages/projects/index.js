@@ -15,14 +15,6 @@ import PCD from '../../components/projects';
 
 
 
-
-
-
-
-
-
-
-
 const steps = [
     {
       style: {

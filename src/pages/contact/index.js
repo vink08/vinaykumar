@@ -132,7 +132,9 @@ class Contact extends React.Component {
             <Row className="Contact-main">
                 <Col xl={40} className="center">
 
-                    <p className="Contact-text"><h1>Get In Touch</h1>Feel free to contact me for any work or suggestions You can Email me at   <br/><i class="fa fa-envelope" aria-hidden="true"></i> mg.vink08@gmail.com</p>
+                    <p className="Contact-text"><h1>Get In Touch</h1>Feel free to contact me for any work or suggestions You can Email me at   <br/><i class="fa fa-envelope" aria-hidden="true"></i> mg.vink08@gmail.com
+                    <br/>
+                    <i class="fa-brands fa-twitter"></i>vink08</p>
                 </Col>
             
             <Col  xl={6}  className="Contact-right">
