@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Raleway|Raleway+Dot|Asap|Barlow|Glegoo|Julius+Sans+One|Lato|Muli|Poiret+One|Sulphur+Point|Turret+Road&display=swap');
+
+.home-left{
+    height: 100%;
+ }
+
+.home-left-main{
+    height: 100%;
+    text-align: center;
+}
+
+.home-left-main-col{
+    margin: auto;    
+    display: block;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  
+
+.first-line{
+    font-size: 4.5rem;
+    font-family: 'Sulphur Point', sans-serif;
+
+
+}
+
+.second_line{
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.typical{
+    font-size: 3.6rem;
+    font-family: 'Sulphur Point', sans-serif;
+    background-color: blue red blue;
+    border-radius: 10px 10px 10px 10px;
+ 
+
+}
+
+.home-left-aboutme-main{
+    position: relative;
+    z-index: -1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+
+}
+
+.home-left-aboutme{
+   color: rgb(219, 225, 230);
+    font-size: 1.5rem;
+    font-family: 'Sulphur Point', sans-serif;
+    text-decoration : none;
+}
+
+.home-left-aboutme:hover{
+    color: rgb(231, 235, 239);
+    font-size: 2.5rem;
+    font-family: 'Sulphur Point', sans-serif;
+    text-decoration : none;
+ }
+
+.home-left-aboutmme-btn{
+    background: linear-gradient(109.6deg, rgb(37, 56, 83) 11.2%, rgb(85, 101, 117) 51.2%, rgb(60, 87, 90) 98.6%);
+    border-radius: 1vb;
+    outline: none;
+    cursor: pointer;
+    color: rgb(245, 246, 246);
+    font-size: 2.5rem;
+    font-family: 'Sulphur Point', sans-serif;
+    text-decoration : none;
+}
+
+.home-left-aboutmme-btn:hover{
+     background: transparent;
+        
+ }
+
+

@@ -1,0 +1,38 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .pro_card {
+    background-color:transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 20px white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-color: antiquewhite;
+    border-width: 2px;
+    
+  }
+  
+  .repoName {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: aliceblue;
+  }
+  
+  .repoInfo {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .project_card_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
