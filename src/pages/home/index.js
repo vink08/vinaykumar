@@ -16,13 +16,7 @@ import ReactGa from 'react-ga';
 import {Helmet} from 'react-helmet';
 import rect from 'rect';
 
-//--Motasim Foads Portfolio website Google analytics--
-//--Replace with your own key !!
-// function Analytics(){
-//   ReactGa.initialize("UA-154721739-1")
-//   ReactGa.pageview('motasimfoad.com - Home Screen')
-// }
-// //--Motasim Foads Portfolio website Google analytics--
+
 
 const steps = [
     {
