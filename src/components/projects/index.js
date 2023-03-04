@@ -5,7 +5,7 @@ import {
   Row,
   Card,
 } from 'react-bootstrap';
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+
 import {ToastsContainer, ToastsStore} from 'react-toasts';
 
 const PCD = () => {

@@ -1,19 +1,14 @@
 import React from 'react';
 import '../contact/style.css';
 import {Container, Row, Col} from 'react-bootstrap';
-//import '../../components/contactform/style.css';
-//import Footer from '../../components/footer';
 import Animate from 'react-smooth';
 import { Button, Form, FormGroup, Modal, Image } from 'react-bootstrap';
 import ClipLoader from 'react-spinners/BarLoader';
 import Hamburger from '../../components/hamburger';
-//import ContactLeft from '../../components/contact_left';
-//import EmailForm from '../../components/email_form'
-//import contactform from '../../components/contactform';
-import ReactGa from 'react-ga';
 import {Helmet} from 'react-helmet';
 import App from '../../App.js';
 import emailjs from 'emailjs-com';
+import Footer from '../../components/footer';
 
 const steps = [
     {
@@ -126,9 +121,9 @@ class Contact extends React.Component {
             <Row className="Hamburger-menu">
             <Hamburger />
             </Row>
-            <br/>
-            <br/>
+            
             <Animate steps={steps}>
+            <h1 className='pro'>Contact</h1>
             <Row className="Contact-main">
                 <Col xl={40} className="center">
 
@@ -183,6 +178,11 @@ class Contact extends React.Component {
             
        
         </Container>
+        <div className="footer-container">
+        <Footer />
+      </div>
+
+
       </div>
     )
   }

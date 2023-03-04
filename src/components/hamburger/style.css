@@ -149,17 +149,18 @@ ul li a{
   display: inline-flex;
   font-weight: 700;
   transition: 0.5s;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-family: 'Poppins', sans-serif;
 }
 
 ul:hover li a{
-  color:  rgba(255,255,255,1);
+  color:  rgb(255, 251, 251);
 }
 
 ul li:hover a{
   font-size: 3em;
   color: #000;
-  background: rgba(255,255,255,1);
+  background: rgb(92, 79, 79);
+  border-radius: 10px;
 }
 
 ul li a:before{

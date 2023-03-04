@@ -1,28 +1,15 @@
 import React from 'react';
 import '../home/style.css';
 import Home_Left from '../../components/home_left';
-
-//import HomeRight from '../../components/home_right';
-//import Footer from '../../components/footer';
 import {
   Container,
   Row,
   Col,
 } from 'react-bootstrap';
 import Animate from 'react-smooth';
-//import Particles from 'react-particles-js';
   import App from '../../App.js'
-import ReactGa from 'react-ga';
 import {Helmet} from 'react-helmet';
-import rect from 'rect';
-
-//--Motasim Foads Portfolio website Google analytics--
-//--Replace with your own key !!
-// function Analytics(){
-//   ReactGa.initialize("UA-154721739-1")
-//   ReactGa.pageview('motasimfoad.com - Home Screen')
-// }
-// //--Motasim Foads Portfolio website Google analytics--
+import Footer from '../../components/footer';
 
 const steps = [
     {
@@ -43,7 +30,6 @@ const steps = [
   
 
 function Home() {
-  //Analytics()
   return (
     <div>
          <Helmet>
@@ -63,6 +49,10 @@ function Home() {
         </Row>
       </Animate>
     </Container>
+    <div className="footer-container">
+        <Footer />
+      </div>
+
   </div>
     );
 }

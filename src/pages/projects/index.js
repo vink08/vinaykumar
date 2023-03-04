@@ -6,11 +6,9 @@ import {
     Row,} from 'react-bootstrap';
 import Hamburger from '../../components/hamburger';
 import Animate from 'react-smooth';
-//import Particles from 'react-particles-js';
-  import App from '../../App.js'
-import ReactGa from 'react-ga';
+import App from '../../App.js'
 import {Helmet} from 'react-helmet';
-
+import Footer from '../../components/footer';
 import PCD from '../../components/projects';
 
 
@@ -37,6 +35,7 @@ class Project extends React.Component {
 
     render() {
         return (
+          <div>
             <Container className="About-header" fluid={true}>
                 <Helmet>
                     <meta charSet="utf-8" />
@@ -62,6 +61,11 @@ class Project extends React.Component {
            
                 </Animate>
             </Container>
+            <div className="footer-container">
+        <Footer />
+      </div>
+            </div>
+    
         );
     }
 }

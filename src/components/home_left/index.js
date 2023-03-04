@@ -1,7 +1,6 @@
 import React from 'react';
 import '../home_left/style.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 import {
@@ -32,12 +31,12 @@ import { Link } from "react-router-dom";
            text="Web Developer........" 
            className="typical"
            speed="500"
-           eraseDelay="500"
+           eraseDelay="1500"
            />
          </h3>
             <br />
 
-            <br />
+            
             
             
             <Button   className="home-left-aboutmme-btn">
@@ -62,16 +61,16 @@ import { Link } from "react-router-dom";
               
            <i class='fab fa-github fa-stack-10x'></i>&nbsp;
            </a>&nbsp;
-           <a style={{ textDecoration: 'none', color: 'white' }} href="https://github.com/vink08" target="_blank" className="home-left-aboutme">
+           <a style={{ textDecoration: 'none', color: 'white' }} href="https://www.linkedin.com/in/vinay-kumar-81986b224" target="_blank" className="home-left-aboutme">
               
             <i class='fab fa-linkedin fa-stack-10x'></i>&nbsp;
               </a>&nbsp;
 
-            <a style={{ textDecoration: 'none', color: 'white' }} href="https://github.com/vink08" target="_blank" className="home-left-aboutme">
+            <a style={{ textDecoration: 'none', color: 'white' }} href="https://www.instagram.com/invites/contact/?i=hu4dgtctykc3&utm_content=my6ire8" target="_blank" className="home-left-aboutme">
               
             <i class='fab fa-instagram fa-stack-10x'></i>&nbsp;
            </a>&nbsp;
-           <a style={{ textDecoration: 'none', color: 'white' }} href="https://github.com/vink08" target="_blank" className="home-left-aboutme">
+           <a style={{ textDecoration: 'none', color: 'white' }} href="https://mobile.twitter.com/iiitb_kumar" target="_blank" className="home-left-aboutme">
               
            <i class="fa-brands fa-twitter"></i>
            </a>&nbsp;
