@@ -9,13 +9,10 @@ import {
 import Animate from 'react-smooth';
   import App from '../../App.js'
 import {Helmet} from 'react-helmet';
-<<<<<<< HEAD
+
 import Footer from '../../components/footer';
-=======
-import rect from 'rect';
 
 
->>>>>>> 992e96a482584e9fc9cc5dc868e5ef3934d6da03
 
 const steps = [
     {
