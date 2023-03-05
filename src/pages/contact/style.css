@@ -1,133 +1,136 @@
-.Contact-main{
-    min-height: 95vh;
-    font-size: 2.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    background-color:transparent;
-}
-
-
-
-.contact_input{
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.contact-email-text-btn{
-  background-color:transparent;
-  border: 2px solid #333;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 14px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-color: #333;
-  border-width: 2px;
-  background-color: transparent;
-  color: white;
-  font-size: 1.5rem;
+/* base styles */
+.Contact-main {
+  min-height: 100vh;
+  font-size: 2rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 30%;
-  margin-bottom: 2%;
-  box-shadow: 0 0 10px #464343;
-
-
-}
-.contact-email-text-btn:hover{
-  background: #666666;
-  color: aliceblue;
-}
-
-
-
-
-.Contact-form{
+  background-color: transparent;
+  }
+  
+  .Contact-main h1 {
+  font-size: 4rem;
+  font-family: 'Sulphur Point', sans-serif;
+  }
+  
+  .Contact-form {
+  width: 90%;
   max-width: 600px;
-  margin: auto;
-  padding: 20px;
+  margin: 2rem 0;
+  padding: 1rem;
   background-color: transparent;
   border-radius: 5px;
   box-shadow: 0 0 20px #c2bbbb;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-
-
-}
-
-
-.contact_input_text{
+  }
   
+  .contact_input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10%;
+  }
+  
+  .contact_input label {
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  margin: 1rem 0;
+  }
+  
+  .contact_input_text {
   width: 100%;
   height: 40px;
-  box-shadow: 0 0 10px #464343;
-  padding-top: 20px;
-  background: transparent;
-  border: 1px solid #d4c2c2;
-  
- 
-  padding: 0 10px;
-  
-  font-size: 14px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
   color: #333;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0.5rem;
+  border: 1px solid #d4c2c2;
+  border-radius: 5px;
+  background-color: transparent;
+  }
+  
+  .contact-email-text-btn {
+  background-color: transparent;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 1rem;
   border-color: #333;
   border-width: 2px;
-  border-style: solid;
-  border-radius: 5px;
-  background-color:transparent;
+  background-color: transparent;
   color: white;
-  font-size: 1.5rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 0 10px #464343;
+  }
   
+  .contact-email-text-btn:hover {
+  background: #666666;
+  color: aliceblue;
+  }
   
-}
-.Contact-text{
+  .Contact-text {
   font-size: 1.5rem;
   font-family: 'Roboto Mono', monospace;
   color: white;
   text-align: center;
-  justify-content: center;
-  padding: 10px 20px;
+  padding: 1rem;
   border-radius: 5px;
+  margin-top: -2cm;
+  }
   
-  width: 90%;
-
-}
-.p-heading1{
-  font-size: 4rem;
-  font-family: 'Sulphur Point', sans-serif;
-}
-
-.contact_input_text:hover{
-  background: #333;
-  color: white;
+  .Contact-text p {
+  margin-top: 4cm;
+  margin-bottom: 2cm;
+  }
   
+  /* media queries */
+  @media screen and (max-width: 768px) {
+  .Contact-main {
+  font-size: 1.5rem;
+  }
+  
+  .contact_input {
+  padding: 0;
+  }
+  
+  .contact_input_text,
+  .contact-email-text-btn {
+  width: 100%;
+  margin: 0.5rem 0;
+  }
+  }
 
-}
-.Contact-right{
-    width: 100%;
-    height: 100%;
+  .Contact-title{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 0 20px;
-}
+    justify-content: center;
+    background-color: transparent;
+    margin-top: -0.7cm;
+    text-shadow: 0 0 20px white;
+  }
+  
+
+  .footer-container {
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }

@@ -40,6 +40,9 @@
    align-items: center;
    justify-content: center;
  }
+ .hamburger {
+  margin-top: -30px;
+}
  
  /* Hamburger Line */
  .menu-wrap .hamburger > div {

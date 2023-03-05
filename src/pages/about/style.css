@@ -1,54 +1,115 @@
-.About-header {
-    background-color:#090909;
-   }
-  
-  .About-main {
-    min-height: 95vh;
-    
-  }
-  
-  .d1{
-    height: 100%;
-    width: 100%;
-   }
-  
-  .d2{
-    height: 100%;
-    width: 100%;
-   }
-  
-  .d3{
-    height: 100%;
-    width: 100%;
-   }
-  
-  .About-footer {
-    min-height: 5vh;
-  }
-  .about-text{
-    font-size: 1.5rem;
-  font-family: 'Roboto Mono', monospace;
+/* Default styles */
+.Contact-header {
+  background-color: #090909;
   color: white;
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-top: -100px;
-  
-  border-radius: 5px;
-  
-  width: 90%;
-  box-shadow: 0 0 20px white;
-  }
-  
+  padding: 2rem;
+}
 
-  .vinay{
-    height: 34vh;
-    width: 35vh;
-    background: transparent;
-    margin-top: -100px;
-    border-radius: 50px;
-    
-    padding: 20px 20px;
-    
-   
-      
+.pro {
+  font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 2rem;
+}
+
+
+.Contact-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.vinay {
+  height: 25vh;
+  width: 25vh;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+img.vinay {
+  margin-bottom: -3cm;
+}
+
+.about-text {
+  font-size: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.5;
+}
+
+p.about-text {
+  margin-top: 4cm;
+}
+
+.fa-envelope,
+.fa-twitter {
+  margin-right: 0.5rem;
+}
+
+.footer-container {
+  margin-top: 2rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .pro {
+    font-size: 3rem;
   }
+
+  .vinay {
+    height: 20vh;
+    width: 20vh;
+  }
+
+  p.about-text {
+    margin-top: 2cm;
+  }
+}
+
+@media (max-width: 576px) {
+  .pro {
+    font-size: 2rem;
+  }
+
+  .vinay {
+    height: 15vh;
+    width: 15vh;
+  }
+
+  p.about-text {
+    margin-top: 1cm;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .pro {
+    font-size: 1.5rem;
+  }
+
+  .vinay {
+    height: 10vh;
+    width: 10vh;
+  }
+
+  p.about-text {
+    margin-top: 0.5cm;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px){
+p.about-text {
+    margin-top: auto;
+}
+}

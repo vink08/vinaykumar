@@ -12,7 +12,7 @@ import {
 import ReactTypingEffect from 'react-typing-effect';
 import { Link } from "react-router-dom";
 
-  function Home_Left() {
+  function HomeLeft() {
   return (
 
     
@@ -23,15 +23,15 @@ import { Link } from "react-router-dom";
            Hello! <span class="wave">👋</span>
          </h1>
          <h2 className="second_line">
-           Hi! I'm <strong>Vinay Kumar</strong>
+           Hi! I'm <strong className='name' >Vinay Kumar</strong>
          </h2>
          <h3>
           
          <ReactTypingEffect 
-           text="Web Developer........" 
+           text="Developer | Programmer" 
            className="typical"
-           speed="500"
-           eraseDelay="1500"
+           speed="100"
+           eraseDelay="50000"
            />
          </h3>
             <br />
@@ -40,7 +40,7 @@ import { Link } from "react-router-dom";
             
             
             <Button   className="home-left-aboutmme-btn">
-              <Link to="/about" className="home-left-aboutme">About Me</Link>
+              <Link to="/about" className="home-left-aboutme">About</Link>
               </Button> &nbsp;
             
            <Button  className="home-left-aboutmme-btn">
@@ -50,27 +50,27 @@ import { Link } from "react-router-dom";
            </Button> &nbsp;
            <Button  className="home-left-aboutmme-btn">
              <Link to="/contact"  className="home-left-aboutme">
-               Contact Me
+               Contact
              </Link>
 
            </Button> &nbsp;
            <br/>
             <br/>
             <br/>
-           <a style={{ textDecoration: 'none', color: 'white' }} href="https://github.com/vink08" target="_blank" className="home-left-aboutme">
+           <a style={{ textDecoration: 'none', color: 'white' }} href="https://github.com/vink08" className="social">
               
            <i class='fab fa-github fa-stack-10x'></i>&nbsp;
            </a>&nbsp;
-           <a style={{ textDecoration: 'none', color: 'white' }} href="https://www.linkedin.com/in/vinay-kumar-81986b224" target="_blank" className="home-left-aboutme">
+           <a style={{ textDecoration: 'none', color: 'white' }} href="https://www.linkedin.com/in/vinay-kumar-81986b224"  className="social">
               
             <i class='fab fa-linkedin fa-stack-10x'></i>&nbsp;
               </a>&nbsp;
 
-            <a style={{ textDecoration: 'none', color: 'white' }} href="https://www.instagram.com/invites/contact/?i=hu4dgtctykc3&utm_content=my6ire8" target="_blank" className="home-left-aboutme">
+            <a style={{ textDecoration: 'none', color: 'white' }} href="https://www.instagram.com/invites/contact/?i=hu4dgtctykc3&utm_content=my6ire8" className="social">
               
             <i class='fab fa-instagram fa-stack-10x'></i>&nbsp;
            </a>&nbsp;
-           <a style={{ textDecoration: 'none', color: 'white' }} href="https://mobile.twitter.com/iiitb_kumar" target="_blank" className="home-left-aboutme">
+           <a style={{ textDecoration: 'none', color: 'white' }} href="https://mobile.twitter.com/iiitb_kumar" className="social">
               
            <i class="fa-brands fa-twitter"></i>
            </a>&nbsp;
@@ -80,9 +80,19 @@ import { Link } from "react-router-dom";
             
          </Col>
      </Row>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    
+            
+     
    </Container>
+   
 
   );
 }
 
-export default Home_Left;
+export default HomeLeft;

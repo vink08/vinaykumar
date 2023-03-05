@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Loader from '../../components/loader';
 import Home from '../home';
+import '../loader/style.css'
 
 function Load() {
   const [loading, setLoading] = useState(true);
@@ -15,7 +16,7 @@ function Load() {
   }, []);
 
   return (
-    <div >
+    <div className='back' >
       {loading ? (
         <Loader />
       ) : (

@@ -8,10 +8,34 @@
     height: 100%;
     text-align: center;
 }
+.home-left-main-col.col-xl-12 {
+    margin-top: -2cm;
+}
 
 .home-left-main-col{
     margin: auto;    
     display: block;
+    height:100%;
+}
+.social{
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 0.5rem;
+    transition: 1.5s;
+    color: rgb(219, 225, 230);
+    font-size: 2.5rem;
+    font-family: 'Sulphur Point', sans-serif;
+    text-decoration : none;
+   
+}
+.social:hover{
+    color: #fff8f8;
+    cursor:pointer;
+    transition: 0.5s;
+    color: rgb(231, 235, 239);
+    font-size: 3.5rem;
+    font-family: 'Sulphur Point', sans-serif;
+    text-decoration : none;
 }
 
 .wave {
@@ -47,9 +71,15 @@
     font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Ubuntu', sans-serif;
 }
+.name{
+    
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(58, 189, 189);
+    border-radius:0.5rem;
+}
 
 .typical{
-    font-size: 3.6rem;
+    font-size: 2.6rem;
     font-family: 'Sulphur Point', sans-serif;
     background-color: blue red blue;
     border-radius: 10px 10px 10px 10px;
@@ -73,12 +103,7 @@
     text-decoration : none;
 }
 
-.home-left-aboutme:hover{
-    color: rgb(231, 235, 239);
-    font-size: 2.5rem;
-    font-family: 'Sulphur Point', sans-serif;
-    text-decoration : none;
- }
+
 
 .home-left-aboutmme-btn{
     background: linear-gradient(109.6deg, rgb(37, 56, 83) 11.2%, rgb(85, 101, 117) 51.2%, rgb(60, 87, 90) 98.6%);
@@ -95,5 +120,4 @@
      background: transparent;
         
  }
-
 

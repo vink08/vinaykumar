@@ -2,7 +2,7 @@ import React from 'react';
 import '../contact/style.css';
 import {Container, Row, Col} from 'react-bootstrap';
 import Animate from 'react-smooth';
-import { Button, Form, FormGroup, Modal, Image } from 'react-bootstrap';
+import { Button, Form, FormGroup, Modal } from 'react-bootstrap';
 import ClipLoader from 'react-spinners/BarLoader';
 import Hamburger from '../../components/hamburger';
 import {Helmet} from 'react-helmet';
@@ -115,19 +115,20 @@ class Contact extends React.Component {
         <Animate to="1" from="0" attributeName="opacity">
       <App className="particle" />
     </Animate>
-          
+    <h1 className="Contact-title">Contact</h1> 
           <Container className="Contact-header" fluid={true}>
           
-            <Row className="Hamburger-menu">
-            <Hamburger />
-            </Row>
+            
             
             <Animate steps={steps}>
-            <h1 className='pro'>Contact</h1>
+            <h1 className="Contact-title">Contact</h1>  
+            
+
             <Row className="Contact-main">
                 <Col xl={40} className="center">
+                     <br/>
 
-                    <p className="Contact-text"><h1>Get In Touch</h1>Feel free to contact me for any work or suggestions You can Email me at   <br/><i class="fa fa-envelope" aria-hidden="true"></i> mg.vink08@gmail.com
+                    <p className="Contact-text"><br/>Get In Touch<br/>Feel free to contact me for any work or suggestions You can Email me at   <br/><i class="fa fa-envelope" aria-hidden="true"></i> mg.vink08@gmail.com
                     <br/>
                     <i class="fa-brands fa-twitter"></i>vink08</p>
                 </Col>
@@ -173,15 +174,16 @@ class Contact extends React.Component {
 
             </Col>
             </Row>
+            <Hamburger />
             </Animate>
 
             
        
         </Container>
         <div className="footer-container">
-        <Footer />
+        <p className='font'> Copyright © 2023  @<strong>Vinay Kumar</strong> </p>
       </div>
-
+      
 
       </div>
     )

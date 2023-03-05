@@ -3,7 +3,9 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #020202;
+  background-color:transparent;
+  margin-top: -0.5cm;
+  
 
   }
   .loader {
@@ -12,7 +14,7 @@
     border-radius: 50%;
     width: 480px;
     height: 480px;
-    color: #fff;
+    color: #e50e0e;
   }
     .loader:before,
     .loader:after {

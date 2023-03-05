@@ -51,18 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vink08/vinaykumar.git"
-  },
-  "author": "Vinay Kumar",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vink08/vinaykumar/issues"
-  },
-  "homepage": "https://github.com/vink08/vinaykumar#readme"
+  }
+  
+  
+  
 }

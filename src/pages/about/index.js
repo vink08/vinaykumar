@@ -42,16 +42,18 @@ class Aboutt extends Component {
     </Animate>
     
           <Container className="Contact-header" fluid={true}>
+
+            
           
-            <Row className="Hamburger-menu">
+            <Row >
             <Hamburger />
             </Row>
             
             <Animate steps={steps}>
-            <h1 className='pro'>About</h1>
+            <p className='pro'>About</p>
             <Row className="Contact-main">
                 <Col xl={40} className="center">
-                <h1><img src= {vinay} alt="hello" className='vinay'  /></h1>
+                <img src= {vinay} alt="hello" className='vinay'  />
                     <p className="about-text">Hi, I'm Vinay Kumar Undergraduate Second year Student of Indian Institute of Information Technology Bhopal. Currently pursuing B-Tech Degree in Information Technology. I'm very passionate to learn new things and ideas. Also I listening  new ideas from other people to enhance my knowledge.I have good
                     commands in Full Stack Development and Django Development. You can contact me at   <br/><i class="fa fa-envelope" aria-hidden="true"></i> mg.vink08@gmail.com
                     <br/>
@@ -62,7 +64,7 @@ class Aboutt extends Component {
           </Animate>
           </Container>
           <div className="footer-container">
-        <Footer />
+          <p className='font'> Copyright © 2023  @<strong>Vinay Kumar</strong> </p>
       </div>
 
           </div>  

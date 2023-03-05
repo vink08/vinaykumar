@@ -1,6 +1,6 @@
 import React from 'react';
 import '../home/style.css';
-import Home_Left from '../../components/home_left';
+import HomeLeft from '../../components/home_left';
 import {
   Container,
   Row,
@@ -9,13 +9,7 @@ import {
 import Animate from 'react-smooth';
   import App from '../../App.js'
 import {Helmet} from 'react-helmet';
-<<<<<<< HEAD
 import Footer from '../../components/footer';
-=======
-import rect from 'rect';
-
-
->>>>>>> 992e96a482584e9fc9cc5dc868e5ef3934d6da03
 
 const steps = [
     {
@@ -43,20 +37,20 @@ function Home() {
                   <title>Home | Vinay Kumar</title>
                   <meta name="description" content="Vinay Kumar | Web Developer" />
          </Helmet>
-    <Animate to="1" from="0" attributeName="opacity">
+         <Animate to="1" from="0" attributeName="opacity">
       <App className="particle" />
     </Animate>
     <Container className="App-header" fluid={true}>
       <Animate steps={steps}>
         <Row className="App-main">
           <Col xl={40} className="center">
-            <Home_Left />
+            <HomeLeft />
           </Col>
         </Row>
       </Animate>
     </Container>
     <div className="footer-container">
-        <Footer />
+            <p className='font'> Copyright © 2023  @<strong>Vinay Kumar</strong> </p>
       </div>
 
   </div>
