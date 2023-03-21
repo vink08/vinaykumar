@@ -75,10 +75,10 @@ class Contact extends React.Component {
      
 
      emailjs.send(
-      'service_hngspri',
+      '________________',
       'template_j8a0r2p',
        templateParams,
-      'tOJPAnXNg1ixvLMlP'
+      '________________'
      )
      .then((result) => {
         this.handleShow();
