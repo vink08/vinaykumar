@@ -9,14 +9,9 @@ import {
 import Animate from 'react-smooth';
   import App from '../../App.js'
 import {Helmet} from 'react-helmet';
-<<<<<<< HEAD
-import Footer from '../../components/footer';
-=======
 
-import Footer from '../../components/footer';
+//import Footer from '../../components/footer';
 
-
->>>>>>> 1c582c222ec19f85af419be394a48e3042ec738d
 
 const steps = [
     {

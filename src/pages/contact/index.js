@@ -150,26 +150,31 @@ class Contact extends React.Component {
             </FormGroup>
            <Button className="contact-email-text-btn"  type="submit">
               Submit
+              <br/>
               <ClipLoader
                 size={150} 
                 color={"#ffffff"}
+                
                 loading={this.state.loading}
               />
             </Button>
+            <br/>
             
-            <Modal
-                size="md"
-                aria-labelledby="contained-modal-title-vcenter"
-                show={this.state.show} onHide={this.handleClose}
-                centered
-              >
-              <Modal.Body className="contact_success_modal_body">
-                <h5>Thank you <span><strong>{this.state.name}</strong>!!</span> 😇</h5>
-                <h6>Your message was successfully recorded</h6>
-                < br />
-                <Button variant="outline-light" size="lg" onClick={this.handleClose} className="contact-email-text-btn">Close</Button>
-              </Modal.Body>
-           </Modal>
+            <Modal show={this.state.show} onHide={this.handleClose}>MESSAGE SENT
+            <Modal.Body>Thank you for contacting me. I will get back to you as soon as possible.</Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={this.handleClose}>
+                Close
+              </Button>
+            </Modal.Footer>
+
+
+        
+        
+          </Modal>
+
+
+
           </Form>
 
             </Col>
