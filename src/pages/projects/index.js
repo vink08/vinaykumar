@@ -61,9 +61,7 @@ class Project extends React.Component {
            
                 </Animate>
             </Container>
-            <div className="footer-container">
-            <p className='font'> Copyright © 2023  @<strong>Vinay Kumar</strong> </p>
-      </div>
+            
             </div>
     
         );

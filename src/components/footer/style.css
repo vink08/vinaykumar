@@ -1,6 +1,19 @@
-.footer{
-    height: 100%;
+/* Assuming the parent container of all components has a flex container */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Adjust the height and alignment of other components as needed */
+.component {
+    flex: 1;
+}
+
+.footer {
     text-align: center;
     font-size: medium;
     color: rgb(202, 200, 200);
+    
+    padding: 20px;
 }

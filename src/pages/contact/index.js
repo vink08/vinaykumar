@@ -185,9 +185,7 @@ class Contact extends React.Component {
             
        
         </Container>
-        <div className="footer-container">
-        <p className='font'> Copyright © 2023  @<strong>Vinay Kumar</strong> </p>
-      </div>
+        
       
 
       </div>
