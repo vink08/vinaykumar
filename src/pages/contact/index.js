@@ -192,3 +192,220 @@ class Contact extends React.Component {
     )
   }
 } export default Contact
+// import React from 'react';
+// import '../contact/style.css';
+// import { Container, Row, Col } from 'react-bootstrap';
+// import Animate from 'react-smooth';
+// import { Button, Form, FormGroup, Modal } from 'react-bootstrap';
+// import ClipLoader from 'react-spinners/BarLoader';
+// import Hamburger from '../../components/hamburger';
+// import { Helmet } from 'react-helmet';
+// import App from '../../App.js';
+// import emailjs from 'emailjs-com';
+
+// const steps = [
+//   {
+//     style: {
+//       opacity: 0,
+//     },
+//     duration: 400,
+//   },
+//   {
+//     style: {
+//       opacity: 1,
+//       transform: 'translate(0, 0)',
+//     },
+//     duration: 1000,
+//   },
+// ];
+
+// class Contact extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       name: '',
+//       email: '',
+//       subject: '',
+//       message: '',
+//       show: false,
+//       loading: false
+//     };
+//   }
+
+//   handleClose = () => {
+//     this.setState({ 
+//       show: false,
+//       loading: false 
+//     });
+//     this.resetForm();
+//   }
+
+//   handleShow = () => {
+//     this.setState({ show: true });
+//   }
+
+//   resetForm = () => {
+//     this.setState({
+//       name: '',
+//       email: '',
+//       subject: '',
+//       message: '',
+//     });
+//   }
+
+//   handleChange = (param, e) => {
+//     this.setState({ [param]: e.target.value });
+//   }
+
+//   handleSubmit = async (e) => {
+//     e.preventDefault();
+//     this.setState({ loading: true });
+
+//     const { name, email, subject, message } = this.state;
+
+//     const templateParams = {
+//       from_name: email,
+//       to_name: 'ivinaykumar02@gmail.com',
+//       subject: subject,
+//       message_html: message,
+//       name: name
+//     };
+
+//     try {
+//       await emailjs.send(
+//         // 'YOUR_SERVICE_ID', // Replace with your service ID'________________',
+//         // //       'template_j8a0r2p',
+//         // //        templateParams,
+//         // //       '________________'
+//         // 'template_j8a0r2p',
+//         // templateParams,
+//         // 'YOUR_USER_ID' // Replace with your user ID
+//         '________________',
+//         'template_j8a0r2p',
+//         templateParams,
+//         '________________'
+//       );
+//       this.handleShow();
+//     } catch (error) {
+//       console.error('Failed to send email:', error);
+//       alert('Failed to send message. Please try again.');
+//     } finally {
+//       this.setState({ loading: false });
+//     }
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         <Helmet>
+//           <meta charSet="utf-8" />
+//           <title>Contact | Vinay Kumar</title>
+//         </Helmet>
+
+//         <Animate to="1" from="0" attributeName="opacity">
+//           <App className="particle" />
+//         </Animate>
+
+//         <Container className="Contact-header" fluid={true}>
+//           <Animate steps={steps}>
+//             <h1 className="Contact-title">Contact</h1>
+
+//             <Row className="Contact-main">
+//               <Col xl={40} className="center">
+//                 <br />
+//                 <p className="Contact-text">
+//                   <br />Get In Touch<br />
+//                   Feel free to contact me for any work or suggestions<br />
+//                   You can Email me at<br />
+//                   <i className="fa fa-envelope" aria-hidden="true"></i> mg.vink08@gmail.com
+//                   <br />
+//                   <i className="fa-brands fa-twitter"></i> vink08
+//                 </p>
+//               </Col>
+
+//               <Col xl={6} className="Contact-right">
+//                 <Form onSubmit={this.handleSubmit} className="Contact-form">
+//                   <p className="contact-form-header">Contact Form</p>
+                  
+//                   <FormGroup className="contact_input">
+//                     <Form.Control
+//                       type="email"
+//                       value={this.state.email}
+//                       className="contact_input_text"
+//                       onChange={(e) => this.handleChange('email', e)}
+//                       placeholder="Email Address"
+//                       required
+//                     />
+//                   </FormGroup>
+
+//                   <FormGroup controlId="formBasicName" className="contact_input">
+//                     <Form.Control
+//                       as="textarea"
+//                       rows="1"
+//                       value={this.state.name}
+//                       onChange={(e) => this.handleChange('name', e)}
+//                       placeholder="Your Name"
+//                       className="contact_input_text"
+//                       required
+//                     />
+//                   </FormGroup>
+
+//                   <FormGroup controlId="formBasicSubject" className="contact_input">
+//                     <Form.Control
+//                       as="textarea"
+//                       rows="1"
+//                       value={this.state.subject}
+//                       onChange={(e) => this.handleChange('subject', e)}
+//                       placeholder="Subject"
+//                       className="contact_input_text"
+//                       required
+//                     />
+//                   </FormGroup>
+
+//                   <FormGroup controlId="formBasicMessage" className="contact_input">
+//                     <Form.Control
+//                       as="textarea"
+//                       rows="6"
+//                       value={this.state.message}
+//                       placeholder="Your text"
+//                       onChange={(e) => this.handleChange('message', e)}
+//                       className="contact_input_text"
+//                       required
+//                     />
+//                   </FormGroup>
+
+//                   <Button className="contact-email-text-btn" type="submit" disabled={this.state.loading}>
+//                     {this.state.loading ? 'Sending...' : 'Submit'}
+//                     <br />
+//                     <ClipLoader
+//                       size={150}
+//                       color={"#ffffff"}
+//                       loading={this.state.loading}
+//                     />
+//                   </Button>
+//                 </Form>
+
+//                 <Modal show={this.state.show} onHide={this.handleClose}>
+//                   <Modal.Header closeButton>
+//                     <Modal.Title>MESSAGE SENT</Modal.Title>
+//                   </Modal.Header>
+//                   <Modal.Body>
+//                     Thank you for contacting me. I will get back to you as soon as possible.
+//                   </Modal.Body>
+//                   <Modal.Footer>
+//                     <Button variant="secondary" onClick={this.handleClose}>
+//                       Close
+//                     </Button>
+//                   </Modal.Footer>
+//                 </Modal>
+//               </Col>
+//             </Row>
+//             <Hamburger />
+//           </Animate>
+//         </Container>
+//       </div>
+//     );
+//   }
+// }
+
+// export default Contact;

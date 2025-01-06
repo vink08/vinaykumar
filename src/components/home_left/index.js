@@ -61,7 +61,7 @@ import { Link } from "react-router-dom";
               
            <i class='fab fa-github fa-stack-10x'></i>&nbsp;
            </a>&nbsp;
-           <a style={{ textDecoration: 'none', color: 'white' }} href="https://www.linkedin.com/in/vinay-kumar-81986b224"  className="social">
+           <a style={{ textDecoration: 'none', color: 'white' }} href="https://www.linkedin.com/in/vinaykumar0802/"  className="social">
               
             <i class='fab fa-linkedin fa-stack-10x'></i>&nbsp;
               </a>&nbsp;

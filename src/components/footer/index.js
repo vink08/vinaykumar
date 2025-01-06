@@ -11,7 +11,7 @@ function Footer() {
     <Container className="footer" fluid={true}>
       <Row >
         <Col xl={12}>
-        Copyright © 2023  @<strong>Vinay Kumar</strong> 
+        Copyright © 2025  @<strong>Vinay Kumar</strong> 
         </Col>
       </Row>
     </Container>

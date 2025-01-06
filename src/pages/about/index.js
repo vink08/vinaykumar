@@ -52,13 +52,16 @@ class Aboutt extends Component {
                 <div className="about-text">
                   <h2>Hi, I'm Vinay Kumar</h2>
                   <p>
-                    Undergraduate Pre Final year Student of Indian Institute
-                    of Information Technology Bhopal. Currently pursuing
-                    B-Tech Degree in Information Technology. I'm very
-                    passionate about learning new things and ideas. I enjoy
-                    listening to new ideas from other people to enhance my
-                    knowledge. I have a strong command in Full Stack
-                    Development.
+                  Hi there! 👋 I'm Vinay Kumar, a passionate and dedicated tech enthusiast currently pursuing a B.Tech in Information Technology at IIIT Bhopal. With a CGPA of 8.89, I have honed my technical expertise and problem-solving skills through academics and real-world projects.
+
+I specialize in full-stack development, particularly with the **MERN stack**, and have a strong foundation in languages like <b>C++</b>, <b>JavaScript</b>, and <b>Python</b>. My experience includes working on projects like EasyShop, Social Media, and ConnectCare, showcasing my ability to build impactful applications from scratch.
+
+Beyond academics, I thrive on challenges. Whether it’s achieving **1st place in the National Level Hackathon Google Solution Challenge Ideathon or securing 49th position in CodeRush by AlgoUniversity, I always strive to push boundaries and grow.
+
+When I’m not coding, you'll find me exploring new technologies, collaborating on innovative ideas, or refining my leadership skills. My goal is to leverage technology to create meaningful solutions that make a difference. 🚀
+
+Let’s connect and build something amazing together! 🌟
+
                   </p>
                   <p>
                     Contact: <i className="fa fa-envelope" aria-hidden="true"></i> mg.vink08@gmail.com
